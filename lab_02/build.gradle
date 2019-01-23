@@ -1,0 +1,19 @@
+apply plugin:'java'
+repositories{
+    mavenCentral()
+}
+dependencies{
+    compile 'org.apache.commons:commons-csv:1.5'
+ }
+
+ sourceCompatibility = 1.7
+ version = '1.0'
+
+ jar {
+    manifest {
+        attributes  'Main-Class': 'gradleDemo.Demo',
+                    'Implementation-Title': 'Sample-Gradle',
+                    'Implementation-Version': version
+    }
+ }
+
